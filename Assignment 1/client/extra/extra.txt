@@ -1,0 +1,137 @@
+<div>
+        <header>
+          <h1>RED CARD 2018</h1>
+          <h2>China digital footballs award</h2>
+        </header>
+      </div>
+      <div className='container' >
+      <h1>Best Clubs:</h1>
+        <div className="logo-container">
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',paddingLeft: '20px'  }}>
+            <img src={bvg} alt="Logo 1" className='logo-img' /> 
+            <p style={{paddingLeft: '10px'}}>descriptive text</p>
+          </div>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',paddingLeft: '20px'  }}>
+            <img src={bvg} alt="Logo 1" className='logo-img' /> 
+            <p style={{paddingLeft: '10px'}}>descriptive text</p>
+          </div>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',paddingLeft: '20px'  }}>
+            <img src={bvg} alt="Logo 1" className='logo-img' /> 
+            <p style={{paddingLeft: '10px'}}>descriptive text</p>
+          </div>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',paddingLeft: '20px'  }}>
+            <img src={bvg} alt="Logo 1" className='logo-img' /> 
+            <p style={{paddingLeft: '10px'}}>descriptive text</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div className='container'>
+        <h1>Best Clubs:</h1>
+        <div className="logo-container">
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',paddingLeft: '20px'  }}>
+            <img src={bvg} alt="Logo 1" className='logo-img' /> 
+            <p style={{paddingLeft: '10px'}}>descriptive text</p>
+          </div>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',paddingLeft: '20px'  }}>
+            <img src={bvg} alt="Logo 1" className='logo-img' /> 
+            <p style={{paddingLeft: '10px'}}>descriptive text</p>
+          </div>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',paddingLeft: '20px'  }}>
+            <img src={bvg} alt="Logo 1" className='logo-img' /> 
+            <p style={{paddingLeft: '10px'}}>descriptive text</p>
+          </div>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',paddingLeft: '20px'  }}>
+            <img src={bvg} alt="Logo 1" className='logo-img' /> 
+            <p style={{paddingLeft: '10px'}}>descriptive text</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div className='container'>
+        <h1>Best Clubs:</h1>
+        <div className="logo-container">
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',paddingLeft: '20px'  }}>
+            <img src={bvg} alt="Logo 1" className='logo-img' /> 
+            <p style={{paddingLeft: '10px'}}>descriptive text</p>
+          </div>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',paddingLeft: '20px'  }}>
+            <img src={bvg} alt="Logo 1" className='logo-img' /> 
+            <p style={{paddingLeft: '10px'}}>descriptive text</p>
+          </div>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',paddingLeft: '20px'  }}>
+            <img src={bvg} alt="Logo 1" className='logo-img' /> 
+            <p style={{paddingLeft: '10px'}}>descriptive text</p>
+          </div>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',paddingLeft: '20px'  }}>
+            <img src={bvg} alt="Logo 1" className='logo-img' /> 
+            <p style={{paddingLeft: '10px'}}>descriptive text</p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>&copy; 2023. All rights reserved.</p>
+      </footer>
+
+
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #c00;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #c00;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.container{
+  padding: 20px;
+}
+.logo-container {
+  display: flex;
+}
+
+.logo-img {
+  padding: 5px;
+  margin-left: 10px;
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+}
+
+

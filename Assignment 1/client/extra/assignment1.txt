@@ -1,0 +1,257 @@
+import React from 'react';
+import './App.css';
+
+function LandingPage() {
+    return (
+        <div>
+            <header>
+                <div className="container">
+                    <div className="logo">Gym Logo</div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Classes</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div className="search">
+                        <input type="text" placeholder="Search..." />
+                        <button type="submit">Search</button>
+                    </div>
+                </div>
+            </header>
+            
+            <main>
+                <div className="main-image">
+                    <img src="gym-image.jpg" alt="Gym Image" />
+                </div>
+    
+                <div className="container">
+                    <div className="card">
+                        <h2>Card 1</h2>
+                        <p>Card content goes here.</p>
+                    </div>
+                    <div className="card">
+                        <h2>Card 2</h2>
+                        <p>Card content goes here.</p>
+                    </div>
+                    <div className="card">
+                        <h2>Card 3</h2>
+                        <p>Card content goes here.</p>
+                    </div>
+                </div>
+    
+                <div className="progress-bars">
+                    <div className="progress-bar">
+                        <div className="progress" style={{ width: '70%' }}>70%</div>
+                        <p>Progress Bar 1 Description</p>
+                    </div>
+                    <div className="progress-bar">
+                        <div className="progress" style={{ width: '50%' }}>50%</div>
+                        <p>Progress Bar 2 Description</p>
+                    </div>
+                    <div className="progress-bar">
+                        <div className="progress" style={{ width: '90%' }}>90%</div>
+                        <p>Progress Bar 3 Description</p>
+                    </div>
+                </div>
+    
+                <div className="feedback">
+                    <h2>Feedback</h2>
+                    <textarea placeholder="Enter your feedback here"></textarea>
+                    <button>Submit</button>
+                </div>
+            </main>
+    
+            <footer>
+                <div className="container">
+                    <div className="social-media">
+                        <h3>Social Media</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                        </ul>
+                    </div>
+                    <div className="gym-details">
+                        <h3>Gym Details</h3>
+                        <p>Information about the gym goes here.</p>
+                    </div>
+                    <div className="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Phone: 123-456-7890</p>
+                        <p>Email: info@gym.com</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    );
+}
+
+export default LandingPage;
+
+
+
+
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.logo {
+  float: left;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  float: right;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search {
+  float: right;
+}
+
+.main-image img {
+  width: 100%;
+  height: 800px;
+  margin-bottom: 10px;
+}
+
+.card {
+  width: calc(25% - 20px);
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 0 10px 20px 10px;
+  float: left;
+}
+
+.progress-bars {
+  margin-top: 20px;
+}
+
+.progress-bar {
+  margin-bottom: 10px;
+}
+
+.progress {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.feedback {
+  margin-top: 20px;
+}
+
+.feedback textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer h3 {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-bottom: 5px;
+}
+
+/* Add this CSS to your existing styles.css file */
+
+.card {
+  width: 50%; /* Change width to 100% */
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 20px; /* Add margin-bottom */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex; /* Add display flex */
+  flex-direction: column;
+  justify-content: end;
+}
+
+/* Add this CSS to adjust the layout of the progress bars */
+.progress-bars {
+  margin-top: 20px;
+}
+
+.progress-bar {
+  margin-bottom: 10px;
+  display: inline-block; /* Add display inline-block */
+  width: 30%; /* Adjust width to fit three progress bars in a row */
+  margin-right: 5%; /* Add margin-right for spacing */
+}
+
+.feedback textarea {
+  width: calc(100% - 42px); /* Adjust width to fit within the container */
+  margin-bottom: 10px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Add flex-wrap */
+}
+
+footer .container > div {
+  width: calc(33.33% - 20px); /* Adjust width to fit three sections in a row */
+  margin-bottom: 20px; /* Add margin-bottom for spacing */
+}
+
+/* Adjust width of social media, gym details, and contact info */
+@media (max-width: 768px) {
+  footer .container > div {
+      width: 100%; /* Set width to 100% for smaller screens */
+  }
+}
+
