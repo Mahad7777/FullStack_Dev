@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './assets/Logo.png';
+import main from './assets/Main.jpg';
 import './App.css';
 
 function App() {
@@ -21,11 +22,8 @@ function App() {
           <button type="submit">Search</button>
         </div>
       </header>
-
-      <br />
-
       <div>
-        <center><img src="placeholder_men_cover.jpg" alt="Delicious Food" width="1610" height="750" /></center>
+        <center><img src={main} alt="Delicious Food" width="1610" height="750" /></center>
       </div>
 
       <section>
