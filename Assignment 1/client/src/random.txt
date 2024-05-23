@@ -1,0 +1,315 @@
+i will provide you know with the html and css code
+html:
+<div style={{ backgroundColor: '#865D36' }}>
+      <header>
+        <div className="logo">
+          <img src={logo} alt="Logo" height="75" width="75" />
+        </div>
+        <nav className="navbar">
+          <ul>
+            <li><h2>Home</h2></li>
+            <li><h2>Menu</h2></li>
+            <li><h2>About Us</h2></li>
+          </ul>
+        </nav>
+        <div className="search-bar">
+          <input type="text" style={{ backgroundColor: '#fff' }} placeholder="Search for dishes..." />
+          <button type="submit">Search</button>
+        </div>
+      </header>
+
+      <br />
+
+      <div>
+        <center><img src="placeholder_men_cover.jpg" alt="Delicious Food" width="1610" height="750" /></center>
+      </div>
+
+      <section>
+        <div className="flex" style={{ backgroundColor: '#93785B' }}>
+          <div className="box">
+            <h2>Quality Ingredients</h2>
+            <p>Using only the freshest and finest ingredients.</p>
+          </div>
+          <div className="box">
+            <h2>Affordable Prices</h2>
+            <p>Enjoy delicious meals at budget-friendly prices.</p>
+          </div>
+          <div className="box">
+            <h2>Global Cuisine</h2>
+            <p>Experience flavors from around the world.</p>
+          </div>
+        </div>
+      </section>
+
+      <div className="container">
+        <div className="progressTop">
+          <div className="progress-bar">
+            <div className="progress" style={{ '--progress-width': '70%', backgroundColor: 'black' }}></div>
+          </div>
+          <div className="progress-bar">
+            <div className="progress" style={{ '--progress-width': '50%', backgroundColor: 'black' }}></div>
+          </div>
+          <div className="progress-bar">
+            <div className="progress" style={{ '--progress-width': '90%', backgroundColor: 'black' }}></div>
+          </div>
+        </div>
+
+        <div className="grid-container">
+          <div className="card" style={{ backgroundColor: '#93785B' }}>
+            <center><h2>100+</h2></center>
+            <center><h3>Dishes</h3></center>
+          </div>
+          <div className="card" style={{ backgroundColor: '#93785B' }}>
+            <center><h2>20+</h2></center>
+            <center><h3>Cuisines</h3></center>
+          </div>
+          <div className="card" style={{ backgroundColor: '#93785B' }}>
+            <center><h2>10+</h2></center>
+            <center><h3>Chefs</h3></center>
+          </div>
+          <div className="card" style={{ backgroundColor: '#93785B' }}>
+            <center><h2>50+</h2></center>
+            <center><h3>Happy Customers</h3></center>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex-center">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you!</p>
+        <textarea style={{ backgroundColor: '#93785B' }} className="message" rows="10" cols="50" placeholder="Enter your message..."></textarea>
+        <button>Send</button>
+      </div>
+
+      <footer>
+        <div className="section">
+          <h1>Follow Us</h1>
+        </div>
+        <div className="section">
+          <h1>About Us</h1>
+          <p>Delighting taste buds since 2005, we are committed to serving you the best.</p>
+        </div>
+        <div className="section">
+          <h1>Contact Information</h1>
+          <p>Email: info@restaurant.com</p>
+          <p>Phone: 123-456-7890</p>
+        </div>
+      </footer>
+    </div>
+
+css:
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    border-radius: 10px;
+    background-color: #865D36
+}
+header {
+    background-color: #93785B;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    background: black;
+    max-width: 100px;
+    margin-left:20px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 180px;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 50px;
+    font-family: 'Segoe UI';
+}
+
+
+.search-bar input[type="text"],
+.search-bar button {
+    padding: 5px 8px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.search-bar button {
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+    margin-right:20px;
+
+}
+
+.search-bar button:hover {
+    background-color: #777;
+}
+
+.whiteText{
+    color:white
+}
+
+.box {
+    background-color: #865D36;
+    padding: 50px;
+    margin: 50px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    color: #000;
+    font-family: 'Segoe UI';
+    font-size: 17px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+
+}
+
+.box h2 {
+    margin-top: 0;
+}
+
+.box p {
+    margin-bottom: 0;
+}
+
+.progressTop{
+    margin-top: 150px;
+}
+.progress-bar {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #1a1a1a;
+    color: black;
+    border-radius: 10px;
+    width: var(--progress-width);
+}
+
+.container {
+    display: grid;
+    padding:50px;
+    padding-left: 140px;
+    padding-right: 140px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: horizontal;
+    align-items: center;
+    justify-content: center;
+    gap:100px;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, p{
+    font-family: 'Segoe UI';
+
+}
+.flex1{
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: center;
+    gap:20px;
+}
+
+.topFixedBar
+{
+    width: 20%;
+    background: #fff;
+    height: 30px;
+}
+
+.flex-vert{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: #93785B;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+section{
+    background-color: #1a1a1a;
+    margin-left: 140px;
+    margin-right: 140px;
+    border-radius: 10px;
+
+}
+
+.section {
+    flex: 1;
+    margin: 0 10px;
+    margin-left:100px;
+
+}
+
+.grid-container {
+    background-color: #865D36;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    font-family: 'Segoe UI';
+
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 50px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 20px;
+
+}
+
+.social-icons img {
+    width: 50px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+footer h1, footer p{
+    font-family: 'Segoe UI';
+
+}
